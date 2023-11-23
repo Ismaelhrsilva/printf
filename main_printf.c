@@ -6,7 +6,7 @@
 /*   By: ishenriq <ishenriq@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 16:00:33 by ishenriq          #+#    #+#             */
-/*   Updated: 2023/11/20 21:51:42 by ishenriq         ###   ########.org.br   */
+/*   Updated: 2023/11/22 20:35:17 by ishenriq         ###   ########.org.br   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,8 @@
 
 int	main(void)
 {
-
-	ft_printf("%d", 123);
+	ft_printf(" %x ", 15);
+	printf("\n");
+	printf(" %x ", 15);
 	return (0);
 }

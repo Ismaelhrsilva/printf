@@ -6,7 +6,7 @@
 /*   By: ishenriq <ishenriq@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 15:59:53 by ishenriq          #+#    #+#             */
-/*   Updated: 2023/11/20 21:52:36 by ishenriq         ###   ########.org.br   */
+/*   Updated: 2023/11/22 20:07:23 by ishenriq         ###   ########.org.br   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,15 +24,15 @@ static int	print_content(va_list variadic_list, char content)
 	//else if (content == 'p')
 	//	count += ft_point_hexadecimal(va_arg(variadic_list, int));
 	else if (content == 'd')
-		count += ft_putnmb(va_arg(variadic_list, int), 10);
+		count += ft_putnmb(va_arg(variadic_list, int), 10, content);
 	else if (content == 'i')
-		count += ft_putnmb(va_arg(variadic_list, int), 10);
+		count += ft_putnmb(va_arg(variadic_list, int), 10, content);
 	else if (content == 'u')
-		count += ft_putnmb(va_arg(variadic_list, unsigned int), 10);
+		count += ft_putnmb(va_arg(variadic_list, unsigned int), 10, content);
 	else if (content == 'x')
-		count += ft_putnmb(va_arg(variadic_list, unsigned int), 16);
+		count += ft_putnmb(va_arg(variadic_list, unsigned int), 16, content);
 	else if (content == 'X')
-		count += ft_putnmb(va_arg(variadic_list, int), 16);
+		count += ft_putnmb(va_arg(variadic_list, int), 16, content);
 	else
 		count += write(1, &content, 1);
 	return (count);
