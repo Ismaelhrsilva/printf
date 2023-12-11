@@ -6,7 +6,7 @@
 #    By: ishenriq <ishenriq@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/11 20:55:32 by ishenriq          #+#    #+#              #
-#    Updated: 2023/11/22 18:30:08 by ishenriq         ###   ########.org.br    #
+#    Updated: 2023/11/27 20:27:17 by ishenriq         ###   ########.org.br    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,8 @@ CFLAGS =  -Wall -Wextra -Werror
 
 #arquivos e objetos
 PT_C = ft_printf.c \
-utils.c
+utils_1.c \
+utils_2.c
 
 INCLUDES = ft_printf.h
 

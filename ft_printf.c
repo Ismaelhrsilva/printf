@@ -6,7 +6,7 @@
 /*   By: ishenriq <ishenriq@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 15:59:53 by ishenriq          #+#    #+#             */
-/*   Updated: 2023/11/23 21:20:35 by ishenriq         ###   ########.org.br   */
+/*   Updated: 2023/11/27 20:22:44 by ishenriq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ static int	print_content(va_list variadic_list, char content)
 int	ft_printf(const char *content, ...)
 {
 	va_list	variadic_list;
-	int	count;
+	int		count;
 
 	count = 0;
 	va_start(variadic_list, content);
@@ -60,4 +60,3 @@ int	ft_printf(const char *content, ...)
 	va_end(variadic_list);
 	return (count);
 }
-
